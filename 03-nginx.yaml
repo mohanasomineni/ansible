@@ -3,12 +3,13 @@
   become: yes # -b
   tasks:
     - name: Install Nginx
-      ansible.builtin.package:
-      name: nginx
-      state: present
+      ansible.builtin.package:  # Use 'apt' for Ubuntu or 'yum' for Amazon Linux
+        name: nginx
+        state: present
 
     - name: Start the Nginx service
       ansible.builtin.package:
-      name: nginx
-      state: started
-      enabled: yes
+        name: nginx
+        state: started
+        enabled: yes
+
