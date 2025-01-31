@@ -4,17 +4,17 @@
   vars:
     course_name: "DevOps with AWS" # STRING
     duration: 120 # NUMBER
-    topics: # LIST
+    topics: # LIST, [] this means list
     - linux
     - shell
     - ansible
     - AWS
     live: true # BOOLEAN
-    tools:
+    tools: #map, {} this means map
       ci: jenkins
       cloud: aws
       containerization: docker
   tasks:
   - name: Print Course Information
     ansible.builtin.debug:
-      msg: "Hello I am learning {{ course_name }}, duration: {{ duration }}, topics are: {{ topics }}, is it {{ live}}, tools covered are: {{ tools}}"
+      msg: "Hello I am learning {{ course_name }}, duration: {{ duration }}, topics are: {{ topics }}, is it live?: {{ live}}, tools covered are: {{ tools}}"
