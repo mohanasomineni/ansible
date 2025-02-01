@@ -40,5 +40,5 @@
             "-rw-r--r-- 1 ec2-user ec2-user  1447 Jan 31 17:27 20-filters.yaml",
             "-rw-r--r-- 1 ec2-user ec2-user   469 Jan 31 18:45 21-shell-command.yaml"
         ]
-    }
 }
+
