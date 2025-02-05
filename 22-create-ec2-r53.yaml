@@ -12,7 +12,7 @@
     - backend
     - frontend
   tasks:
-  - name: Install MySQL libraries
+  - name: Install AWS Python libraries
     ansible.builtin.pip:
       name: "{{ item }}"
       executable: pip3.9
